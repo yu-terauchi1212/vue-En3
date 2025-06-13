@@ -3,7 +3,7 @@ import { ref , onMounted } from 'vue';
 import axios from 'axios';
 
 //ページタイトルと入力状態
-const pgtitle = ref('読書データベース');
+const pgtitle = ref('読書リスト');
 const db = ref([]);
 
 const projectId = 'vue-test1-2d4c2'; // ここにあなたのプロジェクトIDを入力してください

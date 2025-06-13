@@ -13,14 +13,21 @@ const router = createRouter({
       path: '/input',
       name: 'input',
       component: () => import('../views/InputView.vue'),
-    },{
+    },
+    {
       path: '/list',
       name: 'list',
       component: () => import('../views/ListView.vue'),
-    },{
+    },
+    {
       path: '/updata',
       name: 'updata',
       component: () => import('../views/UpdataView.vue'),
+    },
+    {
+      path: '/database',
+      name: 'database',
+      component: () => import('../views/DatabaseView.vue'),
     }
   ],
 })

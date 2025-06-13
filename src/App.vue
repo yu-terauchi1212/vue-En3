@@ -1,13 +1,15 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/books_img.png" width="125" height="125" />
+    
 
     <div class="wrapper">
+      <img alt="Vue logo" class="logo" src="@/assets/books_img.png" width="125" height="125" />
       <HelloWorld msg="読書管理DB" />
 
       <nav>
@@ -15,22 +17,25 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/input">Input</RouterLink>
         <RouterLink to="/list">List</RouterLink>
         <RouterLink to="/updata">Updata</RouterLink>
+        <RouterLink to="/database">Database</RouterLink>
       </nav>
     </div>
-  </header>
+  </header><br>
+
 
   <RouterView />
+
+
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+
 }
 
 nav {
@@ -66,12 +71,14 @@ nav a:first-of-type {
   }
 
   .logo {
+     display: flex;
+    place-items: center;
     margin: 0 2rem 0 0;
   }
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
+    place-items: center;
     flex-wrap: wrap;
   }
 
